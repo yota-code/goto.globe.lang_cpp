@@ -1,4 +1,4 @@
-SHELL=/usr/bin/env bash
+SHELL=/usr/bin/env sh
 
 source_cpp_to_object=$(addprefix $(2)/,$(patsubst %.cpp,%.o,$(notdir $(1))))
 
