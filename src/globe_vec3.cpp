@@ -94,7 +94,7 @@ namespace globe {
 	}
 
 	Vec3 Vec3::normalized() {
-		double n = this->norm();
+		double n = 1.0 / this->norm();
 		return Vec3(
 			n * this->x,
 			n * this->y,

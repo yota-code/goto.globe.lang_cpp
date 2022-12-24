@@ -37,11 +37,11 @@ namespace globe {
 			double angle_to(Vec3 & other);
 			double angle_to(Vec3 & other, Vec3 & way);
 
-			Vec3 operator+(const Vec3 & other); // overload + with add()
-			Vec3 operator-(Vec3 & other); // overload - with add() of inv()
+			Vec3 operator+(const Vec3 & other); // overload a + b with a.add(b)
+			Vec3 operator-(Vec3 & other); // overload a - b with a.add(b.inv())
 			Vec3 operator-(); // overload -u with u.inv()
-			double operator*(const Vec3 & other); // overload * with scalar_product()
-			Vec3 operator^(const Vec3 & other); // overload ^ with cross_product()
+			double operator*(const Vec3 & other); // overload a * b with a.scalar_product(b)
+			Vec3 operator^(const Vec3 & other); // overload a ^ b with a.cross_product(b)
 
 			friend Vec3 operator*(double k, Vec3 & self);
 			friend Vec3 operator*(Vec3 & self, double k);
